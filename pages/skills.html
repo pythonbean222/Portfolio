@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="../styles/global.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="typewriter">
+    <header>
+        <h1 id="name"></h1>
+
+        <script>
+            var i = 0;
+            var txt = "Bryanna Rosales-Hernandez";
+            var speed = 50;
+
+            function typewriter() {
+                if (i < txt.length) {
+                    document.getElementById("name").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typewriter,speed);
+                }
+            }
+            typewriter();
+        </script>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="aboutme.html">About Me</a>
+    </nav>
+
+    <div class="container">
+        <div class="item">
+            <h4>
+                <a href="https://github.com/pythonbean222/CS467CapstoneProject" target="_blank">Capstone Project &bull; Escape Room Challenge &bull; Unity, C#</a>
+                <img src="../srcs/ClickHere.png" alt="Personal Portrait" width="15" height="15">
+            </h4>
+            <p><b>Immersive 3D escape room puzzle game where players solve logic-based puzzles across multiple rooms in order to progress and complete the game</b></p>
+            <ul>
+                <li>Designed and implemented multiple interconnected puzzle systems across 3 themed rooms, with progression-based logic</li>
+                <li>Functional in-game UI elements including HUD systems, countdown timer, and hint prompts to enhance user interaction and gameplay experience</li>
+                <li>Scripting and mechanics implemented with C# and Unity scripting API within an agile, milestone-driven development process</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h4>Python</h4>
+           <dl>
+                <dt>
+                    <a href="https://github.com/pythonbean222/CS361-UserAuth-Microservice" target="_blank">User Authentication Microservice</a>
+                    <img src="../srcs/ClickHere.png" alt="Personal Portrait" width="15" height="15">
+                </dt>
+                <dd>Allows the website to store username and password in textfiles. Returns message if username taken or not found</dd>
+
+                <dt style="padding-top: 1rem;" >
+                    <a href="https://github.com/pythonbean222/CS361-Notification-Microservice" target="_blank">Notification Microservice</a>
+                    <img src="../srcs/ClickHere.png" alt="Personal Portrait" width="15" height="15">
+                </dt>
+                <dd>Stores emails in the database, sends scheduled emails and stores the delivery status of all emails</dd>
+            </dl>
+        </div>
+
+        <div class="item">
+            <h4>
+                <a href="https://github.com/pythonbean222/CS340proj" target="_blank">Event Managment Website &bull; Handlebars, HTML, Node.js, Express.js, MySQL (MariaDB) </a> 
+                <img src="../srcs/ClickHere.png" alt="Personal Portrait" width="15" height="15">
+            </h4>
+            <p><b>Orchestr is a full-stack event operations management system that centralizes venue scheduling, event planning, staff assignments, and activity tracking through a relational database</b></p>
+            <ul>
+                <li>Implemented CRUD operations, stored procedures, and relational database design with one-to-many and many-to-many relationships</li>
+                <li>Developed dynamic dropdowns, foreign key management, and event/staff assignment workflows for efficient data management</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bryanna Rosales-Hernandez</p>
+    </footer>
+
+</body>
+</html>

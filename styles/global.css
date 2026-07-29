@@ -1,0 +1,113 @@
+:root{
+    --primary-color: #fffcf2;
+    --secondary-color: #c2d4dd;
+    --primary-text:#252422;
+    --secondary-text: #4d2600;
+}
+
+header{
+    background-image: url(../srcs/Header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.2rem;
+    margin: 0;
+}
+
+body{
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--secondary-text);
+}
+
+nav{
+    background-color: var(--secondary-color);
+    border: 2px solid #4d2600;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav a{
+    padding: 14px 16px;
+    color: var(--primary-text);
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: #eb5e28;
+  transform: scale(1.1);
+}
+
+a{
+    color: #4d2600;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+    color: #eb5e28;
+}
+
+.center{
+    background-color: var(--secondary-color);
+    border: 2px solid #4d2600;
+    padding: 2rem;
+    margin: 0 auto;
+    width:fit-content;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.space{
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    background-image: radial-gradient(circle, #403d39, #4d2600);
+    color: transparent;
+    background-clip: text;
+}
+
+footer p{
+    font-size: 1rem;
+    color: var(--primary-text);
+    opacity: 0.2;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 3rem;
+}
+
+.item{
+    background-color: var(--secondary-color);
+    border: 2px solid #4d2600;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+
+.item h4{
+    color: #eb5e28;
+}

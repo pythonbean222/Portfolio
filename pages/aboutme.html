@@ -6,29 +6,15 @@
     <title>Bryanna Rosales | Portfolio</title>
     <link href="../styles/global.css" rel="stylesheet" type="text/css"/>   
 </head>
-<body onload="typewriter">
+
+<body>
     <header>
-        <h1 id="name"></h1>
-
-        <script>
-            var i = 0;
-            var txt = "Bryanna Rosales-Hernandez";
-            var speed = 50;
-
-            function typewriter() {
-                if (i < txt.length) {
-                    document.getElementById("name").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typewriter,speed);
-                }
-            }
-            typewriter();
-        </script>
+        <web-header></web-header>
     </header>
-    
+
     <nav>
         <a href="../index.html">Home</a>
-        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
         <a href="aboutme.html">About Me</a>
     </nav>
 
@@ -38,5 +24,6 @@
         <p>&copy; 2026 Bryanna Rosales-Hernandez</p>
     </footer>
 
+    <script src="../js-components/header.js"></script>
 </body>
 </html>

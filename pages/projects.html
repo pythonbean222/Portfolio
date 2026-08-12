@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <title>Bryanna Rosales | Portfolio</title>
+        <link href="../styles/global.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <web-header></web-header>
+        </header>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="projects.html">Project</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
+
+        <div class="container">
+            <!-- ----------------------- TEMPLATE
+        <div class="item">
+            <web-project
+                name = " "
+                stack = " "
+                liveLink: " "
+                githubLink = 
+                detail = " " 
+            ></web-project>
+        </div>
+        -----------------------  -->
+
+            <!-- EVENT MANAGEMENT WEBSITE -->
+            <div class="item">
+                <web-project
+                    name="Event Managment Website"
+                    stack="Handlebars | HTML | Node.js | Express.js | MySQL (MariaDB)"
+                    githubLink=https://github.com/pythonbean222/CS340proj
+                    detail="Full-stack event management system with implemented CRUD operations, relational database management, many-to-many staff assignments, event scheduling, and dynamic data relationships."></web-project>
+            </div>
+
+            <!-- CAPSTONE PROJECT -->
+            <div class="item">
+                <web-project
+                    name="Escape Room Challenge"
+                    stack="Unity | C# | Unity Scripting API"
+                    githubLink=https://github.com/pythonbean222/CS467CapstoneProject
+                    detail="Immersive 3D escape room puzzle game in Unity using C#, featuring multiple interconnected rooms, interactive logic-based puzzles, player progression, HUD systems, and interactive dialogue"></web-project>
+            </div>
+
+            <!-- NOTIFICATION MICROSERVICE -->
+            <div class="item">
+                <web-project
+                    name="Email Notification Microservice"
+                    stack="Python"
+                    githubLink=https://github.com/pythonbean222/CS361-Notification-Microservice
+                    detail="Python-based notification microservice that validates email requests, manages user email records, schedules and sends automated emails, and logs notifications and errors using SMTP and file-based data storage."></web-project>
+            </div>
+
+            <!-- USER AUTH MICROSERVICE -->
+            <div class="item">
+                <web-project
+                    name="User Authorization Microservice"
+                    stack="Python"
+                    githubLink=https://github.com/pythonbean222/CS361-UserAuth-Microservice
+                    detail="Python-based microservice that processes user commands such as registration, login, password recovery, and email notifications, and manages inter-service communication through file-based messaging and logging."></web-project>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Bryanna Rosales-Hernandez</p>
+        </footer>
+
+        <script src="../js-components/header.js"></script>
+        <script src="../js-components/project.js"></script>
+    </body>
+</html>

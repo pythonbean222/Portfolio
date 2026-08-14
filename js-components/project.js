@@ -1,7 +1,7 @@
 /*
  * Projects Component
  *
- * Creates a reusable <project> custom element that displays
+ * Creates a reusable <web-project> custom element that displays
  * information on a project with the following details: 
  * Project name
  * Tech stack 

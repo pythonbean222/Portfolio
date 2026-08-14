@@ -1,29 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
-    <title>Bryanna Rosales | Portfolio</title>
-    <link href="../styles/global.css" rel="stylesheet" type="text/css"/>   
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <title>Bryanna Rosales | Portfolio</title>
+        <link href="../styles/global.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type='text/css'
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-<body>
-    <header>
-        <web-header></web-header>
-    </header>
+    </head>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="aboutme.html">About Me</a>
-    </nav>
+    <body id="about-page-img" style="font-family: Trebuchet MS, Helvetica, sans-serif;">
+        <header id="about-header">
+            <web-header></web-header>
+        </header>
 
-    <p>In Progress</p>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
 
-    <footer>
-        <p>&copy; 2026 Bryanna Rosales-Hernandez</p>
-    </footer>
+        <div>
+            <!--WHO I AM-->
+            <div class="about-item" id="about-summary-img">
+                <h3>Who I Am</h3>
 
-    <script src="../js-components/header.js"></script>
-</body>
+                <p>
+                    Hi! I am Bryanna Rosales-Hernandez, a Computer Science
+                    student at Oregon State University with an expected
+                    graduation in September 2026. I have a background in
+                    computer science, healthcare, and research which has
+                    provided me with experience in both technical and
+                    collaborative environements.
+                </p>
+
+                <p>
+                    Through my course work and projects at OSU,
+                    I've developed experience building
+                    full-stack applications, working with
+                    databases, solving issues through technology,
+                    and collaborating on projects under Agile
+                    environements.
+                </p>
+
+                <p>
+                    My experience in the healthcare field has also
+                    allowed me to strengten my communication,
+                    teamwork, attention to detail, and ability to work
+                    effectively in fast-paced environements.
+                </p>
+            </div>
+        </div>
+
+        <div id="cards">
+            <!--WHY COMPUTER SCIENCE-->
+            <div class="about-item" id="about-card-img"
+                style="transform: rotate(-5deg);">
+                <h3>Why Computer Science</h3>
+                <p>
+                    I chose Compuer Science because I enjoy solving
+                    problems and turning ideas into something functional.
+                    What started as an interest in technology grew
+                    into a passion for learning how software works and how
+                    it can be used to solve real-world problems. I enjoy the
+                    challenge of programming and the satisfaction of creating
+                    something that people can actually use.
+                </p>
+            </div>
+
+            <!--CAREER GOALS-->
+            <div class="about-item" id="about-card-img"
+                style="transform: rotate(5deg);">
+                <h3>Career Goals</h3>
+                <p>
+                    After learning varies programming languages,
+                    and gaining experience with software development,
+                    debugging, testing, and building applications,
+                    I'm excited to continue growing in the field of
+                    technology. I'm open to opportunites that allow me
+                    to apply what I've learned, take on new challenges,
+                    and continue developing my skills as a software
+                    professional.
+                </p>
+            </div>
+        </div>
+
+        <!--SKILLS-->
+        <div class="about-stack">
+            <!-- -------PROGRAMMING LANGUAGES------- -->
+            <div class="about-item sticky-note"
+                style="background-image: url(../srcs/about-page-imgs/greenSticky.png);">
+                <h4>Programming Languages</h4>
+                <div id="cards">
+                    <web-stack id="card"
+                        stack="Python"
+                        link=https://www.python.org/
+                        image="devicon-python-plain-wordmark colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Javascript"
+                        link=https://developer.mozilla.org/en-US/docs/Web/JavaScript
+                        image="devicon-javascript-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="SQL"
+                        link=https://www.w3schools.com/sql/sql_intro.asp
+                        image="devicon-azuresqldatabase-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="C++"
+                        link=https://isocpp.org/
+                        image="devicon-cplusplus-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="C#"
+                        link=https://dotnet.microsoft.com/en-us/languages/csharp
+                        image="devicon-csharp-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="C"
+                        link=https://www.w3schools.com/c/c_intro.php
+                        image="devicon-c-original colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Kotlin"
+                        link=https://kotlinlang.org/
+                        mage="devicon-kotlin-plain colored"></web-stack>
+                </div>
+            </div>
+
+            <!-- -------FRAMEWORK & LIBRARIES------- -->
+            <div class="about-item sticky-note"
+                style="background-image: url(../srcs/about-page-imgs/pinkSticky.png);">
+                <h4>Framework & Libraries</h4>
+                <div id="cards">
+                    <web-stack id="card"
+                        stack="React"
+                        link=https://react.dev/
+                        image="devicon-react-original colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Mongoose"
+                        link=https://mongoosejs.com/
+                        image="devicon-mongoose-original colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Jetpack Compose"
+                        link=https://developer.android.com/compose
+                        image="devicon-jetpackcompose-plain colored"></web-stack>
+                </div>
+            </div>
+
+            <!-- -------DATABASES------- -->
+            <div class="about-item sticky-note"
+                style="background-image: url(../srcs/about-page-imgs/redSticky.png);">
+                <h4>Databases</h4>
+                <div id="cards">
+                    <web-stack id="card"
+                        stack="MySQL"
+                        link=https://www.mysql.com/
+                        image="devicon-mysql-original colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="PostgreSQl"
+                        link=https://www.postgresql.org/
+                        image="devicon-postgresql-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="MariaDB"
+                        link=https://mariadb.org/
+                        image="devicon-mariadb-original colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="MongoDB"
+                        link=https://www.mongodb.com/
+                        image="devicon-mongodb-plain colored"></web-stack>
+                </div>
+            </div>
+
+            <!-- -------DEVELOPMENT TOOLS------- -->
+            <div class="about-item sticky-note"
+                style="background-image: url(../srcs/about-page-imgs/orangeSticky.png);">
+                <h4>Development Tools</h4>
+                <div id="cards">
+                    <web-stack id="card"
+                        stack="Github"
+                        link=https://github.com/
+                        image="devicon-github-original colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Visual Studio Code"
+                        link=https://code.visualstudio.com/
+                        image="devicon-vscode-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Andriod Studio"
+                        link=https://developer.android.com/studio
+                        image="devicon-androidstudio-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="UnityHUb"
+                        link=https://docs.unity.com/en-us/hub
+                        image="devicon-unity-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="NPM"
+                        link=https://www.npmjs.com/
+                        image="devicon-npm-original-wordmark colored"></web-stack>
+                </div>
+            </div>
+
+            <!-- -------WEB TECHNOLOGIES------- -->
+            <div class="about-item sticky-note"
+                style="background-image: url(../srcs/about-page-imgs/purpleSticky.png);">
+                <h4>Web Technologies</h4>
+                <div id="cards">
+                    <web-stack id="card"
+                        stack="Html"
+                        link=https://developer.mozilla.org/en-US/docs/Web/HTML
+                        image="devicon-html5-plain-wordmark colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="CSS"
+                        link=https://developer.mozilla.org/en-US/docs/Web/CSS
+                        image="devicon-css3-plain-wordmark colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Node.js"
+                        link=https://nodejs.org/en
+                        image="devicon-nodejs-plain colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Express.js"
+                        link=https://expressjs.com/
+                        image="devicon-express-original colored"></web-stack>
+
+                    <web-stack id="card"
+                        stack="Handlebars"
+                        link=https://handlebarsjs.com/
+                        image="devicon-handlebars-original colored"></web-stack>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Bryanna Rosales-Hernandez</p>
+        </footer>
+
+        <script src="../js-components/header.js"></script>
+        <script src="../js-components/stack.js"></script>
+    </body>
 </html>

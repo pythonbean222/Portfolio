@@ -24,6 +24,10 @@ body {
     color: var(--secondary-text);
 }
 
+div p {
+    padding-bottom: 1rem;
+}
+
 nav {
     background-color: var(--blue-background-color);
     border: 2px solid #4d2600;
@@ -115,5 +119,80 @@ footer p {
 }
 
 .github:hover {
-  transform: rotate(20deg);
+    transform: rotate(20deg);
 }
+
+/* ----------- ABOUT ME STYLING ----------- */
+/*
+ * sources: https://freefrontend.com/css-card-layouts/ 
+*/
+
+.about-item {
+    display: flex;
+    flex: 0 0 350px;
+    flex-direction: column;
+    padding: 2rem;
+    background: #f8f3e8;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    margin: 2rem;
+}
+
+.about-stack{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-center;
+    flex: 0 0 250px;
+    flex-direction: row;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+#card:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+/* ----------- IMAGES ----------- */
+#about-header{
+    background-image: url(../srcs/about-page-imgs/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-page-img{
+    background-image: url(../srcs/about-page-imgs/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-summary-img{
+    background-image: url(../srcs/about-page-imgs/notebook.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-card-img{
+    background-image: url(../srcs/about-page-imgs/noteStars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sticky-note{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ----------- IMAGES END ----------- */

@@ -14,7 +14,7 @@ class Project extends HTMLElement {
         const liveLink = this.getAttribute("liveLink")
 
         const checkLink = liveLink ?
-            this.innerHTML = ` <a href=${liveLink} target="_blank">Live Link!</a> |` :
+            this.innerHTML = ` <a href=${liveLink} target="_blank">Live Demo</a> |` :
             this.innerHTML = ` `;
 
         const name = this.getAttribute("name")
